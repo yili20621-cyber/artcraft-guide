@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FilmCraft: Free Open-Source Premiere Alternative</title>
+<meta name="description" content="FilmCraft is ArtCraft's open-source answer to Premiere Pro — own codecs (no FFmpeg), 55 effects, EBU R128 loudness. Features, status, and alternatives.">
+<link rel="canonical" href="https://yili20621-cyber.github.io/artcraft-guide/filmcraft.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FilmCraft: Free Open-Source Premiere Alternative">
+<meta property="og:description" content="Own codecs (no FFmpeg), 55 effects, EBU R128 loudness — FilmCraft features, status, and alternatives.">
+<meta property="og:url" content="https://yili20621-cyber.github.io/artcraft-guide/filmcraft.html">
+<meta property="og:image" content="https://yili20621-cyber.github.io/artcraft-guide/images/artcraft-homepage.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="qcSjqYGsympJ9V_Rm7Jsvqtc3agBOfJu8zl4cfnhigA">
+<link rel="stylesheet" href="./style.css">
+<!-- Google Analytics 4 — REPLACE G-XXXXXXXXXX with your Measurement ID after creating a GA4 property -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<!-- Microsoft Clarity — REPLACE CLARITY_PROJECT_ID after creating a free project at clarity.microsoft.com -->
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","CLARITY_PROJECT_ID");</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"FilmCraft: Free Open-Source Premiere Alternative","datePublished":"2026-10-11","dateModified":"2026-10-11","author":{"@type":"Organization","name":"ArtCraftGuide"},"publisher":{"@type":"Organization","name":"ArtCraftGuide"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yili20621-cyber.github.io/artcraft-guide/"},{"@type":"ListItem","position":2,"name":"FilmCraft","item":"https://yili20621-cyber.github.io/artcraft-guide/filmcraft.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is FilmCraft?","acceptedAnswer":{"@type":"Answer","text":"FilmCraft is the video editor in ArtCraft's Crafting Apps family — a free, open-source reimplementation of Adobe Premiere Pro, written from scratch in Rust. It features source and program monitors, a multi-track timeline, 3-point editing, color grading with curves, wheels, HSL and LUTs, around 55 effects and 30 transitions, and its own codec implementations (H.264, HEVC, ProRes, VP9, AAC, Opus) with no FFmpeg dependency."}},
+{"@type":"Question","name":"Is FilmCraft available to download?","acceptedAnswer":{"@type":"Answer","text":"FilmCraft is in development as of October 2026. Builds and source code are published via getartcraft.com/apps and the github.com/storytold organization. Avoid unofficial mirrors."}},
+{"@type":"Question","name":"Does FilmCraft use FFmpeg?","acceptedAnswer":{"@type":"Answer","text":"No — unusually, FilmCraft implements its own codecs in Rust, including H.264, HEVC, ProRes, VP9, AAC and Opus, rather than wrapping FFmpeg. This is one of its most ambitious technical choices."}},
+{"@type":"Question","name":"What are the best free video editors right now?","acceptedAnswer":{"@type":"Answer","text":"DaVinci Resolve (free tier, pro-grade), CapCut (free, beginner-friendly), and Kdenlive (open-source) are the strongest free video editors while FilmCraft matures."}}
+]}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="./index.html">ArtCraft<span>Guide</span></a>
+<nav class="top">
+<a href="./artcraft-studio.html">Studio</a>
+<a href="./photocraft-download.html">PhotoCraft</a>
+<a href="./photocraft-vs-photoshop.html">vs Photoshop</a>
+<a href="./artcraft-suite-review.html">Full Suite</a>
+</nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="./index.html">Home</a> › FilmCraft</p>
+
+<h1>FilmCraft: ArtCraft's Open-Source Premiere Pro Alternative</h1>
+<p class="lede"><span class="tag dev">In development</span><span class="tag free">Free &amp; open-source</span></p>
+<p class="lede">FilmCraft is the video editor in ArtCraft's <a href="./index.html">Crafting Apps family</a> — a from-scratch, Rust-written reimplementation of <strong>Adobe Premiere Pro</strong>. Its tagline: "Professional video editing, rebuilt from scratch." Of all seven apps, it's the most technically audacious — and the one with the longest road ahead.</p>
+
+<h2>Status as of October 2026</h2>
+<div class="card">
+<p>FilmCraft is <strong>in development</strong>, behind <a href="./photocraft-review.html">PhotoCraft</a> (early alpha) in the family's release order. Builds and source are distributed through <code>getartcraft.com/apps</code> and <code>github.com/storytold</code>. Video editing is a much harder problem than raster editing — codecs, timeline rendering, color pipelines, audio sync — so expect FilmCraft's alpha to arrive later and rougher.</p>
+</div>
+
+<h2>The feature set (as published by the project)</h2>
+<ul>
+<li><strong>Editing core:</strong> source and program monitors, a multi-track timeline, 3-point editing and trimming — the professional NLE workflow, not a simplified consumer one.</li>
+<li><strong>Color:</strong> grading via curves, color wheels, HSL and LUTs, with HDR and Log video workflows.</li>
+<li><strong>Effects:</strong> approximately 55 video effects, 30 transitions, and keyframe editing.</li>
+<li><strong>Audio:</strong> an EBU R128 compliant loudness meter — a broadcast-standard detail that signals professional intent.</li>
+<li><strong>The audacious part — own codecs:</strong> FilmCraft <strong>doesn't use FFmpeg</strong>. It implements H.264, HEVC, ProRes, VP9, AAC and Opus itself, in Rust. Every other free editor (and many paid ones) wraps FFmpeg; writing codecs from scratch is a moonshot that either becomes a legendary engineering feat or the project's biggest maintenance burden.</li>
+</ul>
+
+<h2>Why this one is the hardest to pull off</h2>
+<p>Photo editing has one file format that matters (PSD). Video editing has dozens of acquisition formats, delivery formats, color spaces and hardware acceleration paths — plus Premiere's real moat: Dynamic Link with After Effects (which the family answers with the in-development EffectCraft), 15 years of third-party panels, and every post-production pipeline on earth. A credible FilmCraft alpha is exciting; a production-ready one is a much longer road. Plan accordingly.</p>
+
+<h2>The codec gamble, explained</h2>
+<p>Why does writing your own codecs matter? Every free video editor today — and honestly, many paid ones — handles media through FFmpeg, the 25-year-old open-source multimedia library. It's battle-tested, but it's also a shared dependency: licensing quirks (H.264/HEVC are patent-encumbered), platform quirks, and a codebase nobody fully controls. By implementing H.264, HEVC, ProRes, VP9, AAC and Opus natively in Rust, FilmCraft gets three things: memory safety in the most attack-prone part of a video app (decoding untrusted files is a classic exploit vector), consistent behavior across platforms, and freedom to optimize for its own timeline engine. The cost: years of edge-case hunting that FFmpeg already survived. When FilmCraft's alpha lands, the first thing to test isn't the effects — it's whether your camera's specific files decode cleanly. Bring your oddest footage: drone HEVC, old ProRes exports, screen recordings with weird frame rates. That's where a young codec stack shows its age.</p>
+
+<h2>What to edit with while FilmCraft matures</h2>
+<table>
+<tr><th>Tool</th><th>Cost</th><th>Best for</th></tr>
+<tr><td>DaVinci Resolve</td><td>Free tier (very generous)</td><td>Pro-grade editing + best-in-class color</td></tr>
+<tr><td>CapCut</td><td>Free</td><td>Fast social/short-form editing</td></tr>
+<tr><td>Kdenlive</td><td>Free, open-source</td><td>Linux-friendly open-source NLE</td></tr>
+<tr><td>FilmCraft</td><td>Free, open-source</td><td>Watch this space — in development</td></tr>
+</table>
+
+<h2>Explore the rest of the family</h2>
+<p>FilmCraft is one of seven Crafting Apps. Also in development: <a href="./vectorcraft.html">VectorCraft</a> (Illustrator alternative) and <a href="./lightcraft.html">LightCraft</a> (Lightroom alternative). If your actual need is AI video generation rather than timeline editing, that's the <a href="./artcraft-studio.html">ArtCraft studio</a> — a different app from the same project. For the honest big picture, read the <a href="./artcraft-suite-review.html">full suite review</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>What is FilmCraft?</summary><p>The video editor in ArtCraft's Crafting Apps family — a free, open-source reimplementation of Premiere Pro written in Rust. Multi-track timeline, 3-point editing, color grading with LUTs, ~55 effects, 30 transitions, EBU R128 loudness, and its own codecs. In development as of October 2026.</p></details>
+<details><summary>Is FilmCraft available to download?</summary><p>It's in development. Builds and source appear via getartcraft.com/apps and github.com/storytold. Avoid unofficial mirrors.</p></details>
+<details><summary>Does FilmCraft use FFmpeg?</summary><p>No — it implements H.264, HEVC, ProRes, VP9, AAC and Opus itself in Rust. One of the project's most ambitious technical choices.</p></details>
+<details><summary>What are the best free video editors right now?</summary><p>DaVinci Resolve's free tier (pro-grade), CapCut (beginner-friendly), and Kdenlive (open-source) — while FilmCraft matures.</p></details>
+<details><summary>Can FilmCraft open Premiere project files?</summary><p>Not that the project has announced as of October 2026. The family's pattern is to prioritize the incumbent's file formats — PhotoCraft leads with layered PSD — so Premiere project import is a reasonable thing to watch for, but don't plan a migration around it until it ships and is tested.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<div><a href="./about.html">About</a><a href="./contact.html">Contact</a><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms</a></div>
+<div class="disc">ArtCraftGuide is an unofficial, independent fan guide. Not affiliated with ArtCraft, Brandon Thomas, or Adobe Inc. ArtCraft apps are open-source software published on GitHub. "Premiere Pro" and "After Effects" are trademarks of Adobe Inc. Information current as of October 2026.</div>
+</div></footer>
+</body>
+</html>

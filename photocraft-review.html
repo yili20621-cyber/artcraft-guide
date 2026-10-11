@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhotoCraft Review: Free Photoshop Alternative, Tested</title>
+<meta name="description" content="PhotoCraft review: the open-source Photoshop alternative examined. Layered PSD, CMYK/ICC color, native speed — but early alpha. What works and what doesn't.">
+<link rel="canonical" href="https://yili20621-cyber.github.io/artcraft-guide/photocraft-review.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PhotoCraft Review: Free Photoshop Alternative, Tested">
+<meta property="og:description" content="Layered PSD, CMYK/ICC color, native Rust speed — but early alpha. What works in PhotoCraft and what doesn't.">
+<meta property="og:url" content="https://yili20621-cyber.github.io/artcraft-guide/photocraft-review.html">
+<meta property="og:image" content="https://yili20621-cyber.github.io/artcraft-guide/images/artcraft-homepage.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="qcSjqYGsympJ9V_Rm7Jsvqtc3agBOfJu8zl4cfnhigA">
+<link rel="stylesheet" href="./style.css">
+<!-- Google Analytics 4 — REPLACE G-XXXXXXXXXX with your Measurement ID after creating a GA4 property -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<!-- Microsoft Clarity — REPLACE CLARITY_PROJECT_ID after creating a free project at clarity.microsoft.com -->
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","CLARITY_PROJECT_ID");</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"PhotoCraft Review: Free Photoshop Alternative, Tested","datePublished":"2026-10-11","dateModified":"2026-10-11","author":{"@type":"Organization","name":"ArtCraftGuide"},"publisher":{"@type":"Organization","name":"ArtCraftGuide"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yili20621-cyber.github.io/artcraft-guide/"},{"@type":"ListItem","position":2,"name":"PhotoCraft Review","item":"https://yili20621-cyber.github.io/artcraft-guide/photocraft-review.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is PhotoCraft good?","acceptedAnswer":{"@type":"Answer","text":"For an early alpha, PhotoCraft is remarkably capable: layered PSD/PSB read and write, masks, adjustment layers, layer styles, text, vectors and brushes, CMYK/Lab support with ICC color management, and native Rust performance. But with roughly a quarter to a third of Photoshop's feature set, it suits hobbyists and quick edits rather than professional production."}},
+{"@type":"Question","name":"Is PhotoCraft safe to use?","acceptedAnswer":{"@type":"Answer","text":"The software is open-source, so its code can be audited by anyone. The main safety risk is fake download sites impersonating the project — only download from getartcraft.com or github.com/storytold. As alpha software, also expect instability and keep backups of important files."}},
+{"@type":"Question","name":"What are PhotoCraft's biggest limitations?","acceptedAnswer":{"@type":"Answer","text":"As of October 2026: no smart objects, incomplete coverage of Photoshop's deepest features, and general alpha-stage instability. Feature parity is roughly a quarter to a third of Photoshop."}},
+{"@type":"Question","name":"Does PhotoCraft support CMYK for print work?","acceptedAnswer":{"@type":"Answer","text":"Yes — unusually for a free editor, PhotoCraft handles RGB, CMYK, Lab and grayscale documents in 8, 16 and 32-bit depth, with ICC color management and soft proofing. That makes it interesting for print-adjacent tasks that GIMP handles poorly."}}
+]}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="./index.html">ArtCraft<span>Guide</span></a>
+<nav class="top">
+<a href="./artcraft-studio.html">Studio</a>
+<a href="./photocraft-download.html">PhotoCraft</a>
+<a href="./photocraft-vs-photoshop.html">vs Photoshop</a>
+<a href="./artcraft-suite-review.html">Full Suite</a>
+</nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="./index.html">Home</a> › PhotoCraft Review</p>
+
+<h1>PhotoCraft Review: The Open-Source Photoshop Alternative, Examined Honestly</h1>
+<p class="lede"><span class="tag alpha">Early alpha</span><span class="tag free">Free &amp; open-source</span></p>
+<p class="lede">PhotoCraft is the most-watched piece of free creative software of October 2026 — a from-scratch, Rust-written Photoshop alternative in ArtCraft's Crafting Apps family. But GitHub stars aren't a review. Here's an honest examination of what the alpha does well, where it breaks, and who should use it.</p>
+
+<h2>The verdict up front</h2>
+<div class="card">
+<p><strong>PhotoCraft is the most impressive "week one" image editor ever shipped — and it's still a week-one app.</strong> The PSD compatibility is real, the color management is shockingly serious for a free tool, and the price (free, open-source) is unbeatable. But with roughly a quarter to a third of Photoshop's feature set and alpha-stage stability, it's a tool for hobbyists, quick edits and the curious — not yet for deadline-driven client work.</p>
+</div>
+
+<h2>What PhotoCraft gets right</h2>
+<h3>1. Real PSD support — the headline feature</h3>
+<p>PhotoCraft opens and saves layered PSD and PSB files, passing 134 of 135 round-trip tests in the project's compatibility suite. Layers, masks and blend modes largely survive the trip, and the app implements the everyday Photoshop surface: layers, masks, adjustment layers, layer styles, text, vectors and brushes. If your main need is "open a PSD, fix something, save it back" without paying Adobe, this alone justifies the download. Details in our <a href="./photocraft-psd.html">PSD compatibility guide</a>.</p>
+<h3>2. Serious color management — the underrated feature</h3>
+<p>This is what separates PhotoCraft from every "free Photoshop clone" before it: it handles <strong>RGB, CMYK, Lab and grayscale</strong> documents at <strong>8, 16 and 32-bit depth</strong>, with <strong>ICC color management and soft proofing</strong>. GIMP still struggles with CMYK; PhotoCraft treats print workflows as a first-class citizen from day one. For designers who occasionally need to check a print file, that's a genuine reason to keep it installed.</p>
+<h3>3. Native performance</h3>
+<p>Written in pure Rust with GPU rendering via Metal, Vulkan, DirectX 12 and WebGPU — no Electron bloat, no background services. The app launches fast and stays responsive on large canvases.</p>
+<h3>4. Open by design</h3>
+<p>The code is public on GitHub, so security researchers can audit it — meaningful for software you'll open client files with. And because it's part of the ArtCraft family, it shares DNA with the <a href="./artcraft-studio.html">ArtCraft AI studio</a>: expect generation features to meet editing features sooner than Adobe users might like.</p>
+
+<h2>Where PhotoCraft falls short</h2>
+<ul>
+<li><strong>Partial feature parity.</strong> Roughly a quarter to a third of Photoshop's feature set. Smart objects are the biggest miss; some advanced layer and color features are still in progress.</li>
+<li><strong>Alpha stability.</strong> Expect occasional crashes on edge-case files. Save often; keep originals untouched.</li>
+<li><strong>A moving target.</strong> The roadmap is ambitious and timelines have already slipped once. Treat promises as aspirations, not dates.</li>
+<li><strong>Unanswered questions.</strong> Legal experts have raised trade-dress concerns about a pixel-similar Photoshop UI. Unlikely to affect users directly, but it adds roadmap uncertainty — know it before building a workflow on PhotoCraft.</li>
+</ul>
+
+<h2>Who should use PhotoCraft today</h2>
+<table>
+<tr><th>User</th><th>Verdict</th></tr>
+<tr><td>Hobbyist / quick photo fixes</td><td>✅ Great fit — free and capable enough</td></tr>
+<tr><td>Designer who occasionally edits PSDs or checks CMYK files</td><td>✅ Good fit — pairs well with Photopea as backup</td></tr>
+<tr><td>Print-adjacent work needing ICC/soft proofing</td><td>✅ Best free option for this niche</td></tr>
+<tr><td>Professional retoucher / agency production</td><td>❌ Not yet — parity and stability aren't there</td></tr>
+<tr><td>Files heavy on smart objects</td><td>❌ Wait for later releases</td></tr>
+</table>
+
+<h2>How it compares</h2>
+<p>For the full head-to-head, read <a href="./photocraft-vs-photoshop.html">PhotoCraft vs Photoshop</a>. Evaluating the whole open-source suite — <a href="./vectorcraft.html">VectorCraft</a>, <a href="./filmcraft.html">FilmCraft</a>, <a href="./lightcraft.html">LightCraft</a> and the rest? See the <a href="./artcraft-suite-review.html">ArtCraft suite review</a>. Ready to try it? <a href="./photocraft-download.html">Download PhotoCraft safely</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>Is PhotoCraft good?</summary><p>For an early alpha, yes — layered PSD read/write, CMYK/ICC color management, native Rust speed, free and open-source. But at roughly a third of Photoshop's feature set, it suits hobbyists and quick edits rather than professional production.</p></details>
+<details><summary>Is PhotoCraft safe to use?</summary><p>The code is open-source and auditable. The real risk is fake download sites — only use getartcraft.com or github.com/storytold. As alpha software, keep backups of important files.</p></details>
+<details><summary>What are PhotoCraft's biggest limitations?</summary><p>No smart objects, incomplete advanced features, and alpha-stage instability — roughly a quarter to a third of Photoshop's feature set as of October 2026.</p></details>
+<details><summary>Does PhotoCraft support CMYK for print work?</summary><p>Yes — RGB, CMYK, Lab and grayscale at 8/16/32-bit, with ICC color management and soft proofing. A standout among free editors.</p></details>
+<details><summary>Does PhotoCraft work offline?</summary><p>Yes — it's a native desktop app with no account requirement and no cloud dependency.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<div><a href="./about.html">About</a><a href="./contact.html">Contact</a><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms</a></div>
+<div class="disc">ArtCraftGuide is an unofficial, independent fan guide. Not affiliated with ArtCraft, Brandon Thomas, or Adobe Inc. ArtCraft apps are open-source software published on GitHub. "Photoshop" is a trademark of Adobe Inc. Information current as of October 2026.</div>
+</div></footer>
+</body>
+</html>

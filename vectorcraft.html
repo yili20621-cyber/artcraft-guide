@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VectorCraft: Free Open-Source Illustrator Alternative</title>
+<meta name="description" content="VectorCraft is ArtCraft's open-source answer to Adobe Illustrator — pen tool, image tracing, SVG/PDF support, written in Rust. Features, status, alternatives.">
+<link rel="canonical" href="https://yili20621-cyber.github.io/artcraft-guide/vectorcraft.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VectorCraft: Free Open-Source Illustrator Alternative">
+<meta property="og:description" content="Pen tool, image tracing, SVG/PDF support, written in Rust — VectorCraft features, status, and alternatives.">
+<meta property="og:url" content="https://yili20621-cyber.github.io/artcraft-guide/vectorcraft.html">
+<meta property="og:image" content="https://yili20621-cyber.github.io/artcraft-guide/images/artcraft-homepage.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="qcSjqYGsympJ9V_Rm7Jsvqtc3agBOfJu8zl4cfnhigA">
+<link rel="stylesheet" href="./style.css">
+<!-- Google Analytics 4 — REPLACE G-XXXXXXXXXX with your Measurement ID after creating a GA4 property -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<!-- Microsoft Clarity — REPLACE CLARITY_PROJECT_ID after creating a free project at clarity.microsoft.com -->
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","CLARITY_PROJECT_ID");</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"VectorCraft: Free Open-Source Illustrator Alternative","datePublished":"2026-10-11","dateModified":"2026-10-11","author":{"@type":"Organization","name":"ArtCraftGuide"},"publisher":{"@type":"Organization","name":"ArtCraftGuide"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yili20621-cyber.github.io/artcraft-guide/"},{"@type":"ListItem","position":2,"name":"VectorCraft","item":"https://yili20621-cyber.github.io/artcraft-guide/vectorcraft.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is VectorCraft?","acceptedAnswer":{"@type":"Answer","text":"VectorCraft is the vector-graphics editor in ArtCraft's Crafting Apps family — a free, open-source reimplementation of Adobe Illustrator, written from scratch in Rust. It implements a pen tool, direct selection, Boolean shape operations, gradient meshes, blending, envelope distortions and image tracing, with SVG and PDF import/export."}},
+{"@type":"Question","name":"Is VectorCraft available to download?","acceptedAnswer":{"@type":"Answer","text":"VectorCraft is in development as of October 2026. Builds and source code are published via the official channels — getartcraft.com/apps and the github.com/storytold organization. Avoid unofficial mirrors."}},
+{"@type":"Question","name":"How fast is VectorCraft?","acceptedAnswer":{"@type":"Answer","text":"ArtCraft claims VectorCraft can draw 20,000 shapes in approximately 27 milliseconds at Retina resolution, thanks to its native Rust codebase and GPU-accelerated rendering — a deliberate contrast with Electron-based vector tools."}},
+{"@type":"Question","name":"What are the best free Illustrator alternatives right now?","acceptedAnswer":{"@type":"Answer","text":"While VectorCraft matures, established free options include Inkscape (open-source, full-featured), Canva's Affinity Designer (free since 2024), and Figma's free tier for UI work."}}
+]}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="./index.html">ArtCraft<span>Guide</span></a>
+<nav class="top">
+<a href="./artcraft-studio.html">Studio</a>
+<a href="./photocraft-download.html">PhotoCraft</a>
+<a href="./photocraft-vs-photoshop.html">vs Photoshop</a>
+<a href="./artcraft-suite-review.html">Full Suite</a>
+</nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="./index.html">Home</a> › VectorCraft</p>
+
+<h1>VectorCraft: ArtCraft's Open-Source Illustrator Alternative</h1>
+<p class="lede"><span class="tag dev">In development</span><span class="tag free">Free &amp; open-source</span></p>
+<p class="lede">VectorCraft is the vector editor in ArtCraft's <a href="./index.html">Crafting Apps family</a> — a from-scratch, Rust-written reimplementation of <strong>Adobe Illustrator</strong>, free forever and open-source. Its tagline: "Vector illustration, reimagined in pure Rust." Here's what's actually implemented, what's claimed, and what to use while it matures.</p>
+
+<h2>Status as of October 2026</h2>
+<div class="card">
+<p>VectorCraft is <strong>in development</strong> — one stage behind <a href="./photocraft-review.html">PhotoCraft</a>, the family's early-alpha flagship. Builds and source are distributed through the official channels: <code>getartcraft.com/apps</code> and the <code>github.com/storytold</code> organization. Given how fast this project ships, expect iteration to be quick — but treat all roadmap statements as aspirations, not dates.</p>
+</div>
+
+<h2>The feature set (as published by the project)</h2>
+<ul>
+<li><strong>Core vector editing:</strong> pen tool, direct selection, Boolean operations on shapes, and snapping — the fundamental Illustrator workflow.</li>
+<li><strong>Advanced shape tools:</strong> gradient meshes, blending, and envelope transformations — features many free vector editors never implement.</li>
+<li><strong>Image tracing:</strong> converts raster images into vectors, the single most-used "pro" feature for logo cleanup work.</li>
+<li><strong>File formats:</strong> SVG and PDF import/export, plus writing to PNG, JPEG and WebP.</li>
+<li><strong>Performance claim:</strong> ArtCraft says VectorCraft can <strong>draw 20,000 shapes in approximately 27 milliseconds at Retina resolution</strong> — a shot across the bow of Electron-based design tools, and plausible given the Rust + GPU architecture proven in PhotoCraft.</li>
+</ul>
+
+<h2>Why this app matters most of the seven</h2>
+<p>Illustrator costs $22.99/month, has no browser version, no Linux version, and a file format that locks decades of design work into a subscription. The professional vector workflow is also more standardized than photo editing — pen, paths, booleans, export — which means a reimplementation doesn't need 35 years of features to be useful. A credible open-source vector editor with real SVG/PDF fidelity would be a bigger deal for working designers than PhotoCraft is for photographers.</p>
+<p>The open question is <strong>AI/EPS file compatibility</strong>. The project's pattern is to lead with the incumbent's file format (PhotoCraft's PSD support is the proof), but as of October 2026 the published format list covers SVG and PDF — watch the release notes for native Illustrator file support before planning any migration.</p>
+
+<h2>VectorCraft vs Inkscape vs Affinity Designer</h2>
+<p>The free vector space already has incumbents, so where would VectorCraft fit? <strong>Inkscape</strong> is the most complete open-source vector editor, but its interface and color management feel their age, and Illustrator migrants regularly bounce off it. <strong>Affinity Designer</strong> (free since Canva's 2024 move) is the polished pro option — but it's closed-source, and "free" now lives inside Canva's ecosystem strategy, which makes some users nervous about the long term. VectorCraft's pitch is to be both things at once: Illustrator-familiar like Affinity, truly open like Inkscape, plus Rust-native performance neither matches. Whether it delivers depends on the two things we can't judge until an alpha ships: how complete the pen/path workflow feels in daily use, and whether Illustrator file compatibility ever arrives. Until then, Inkscape and Affinity remain the tools you can actually ship work with today.</p>
+
+<h2>What to use while VectorCraft matures</h2>
+<table>
+<tr><th>Tool</th><th>Cost</th><th>Best for</th></tr>
+<tr><td>Inkscape</td><td>Free, open-source</td><td>Full vector editing; the established FOSS choice</td></tr>
+<tr><td>Affinity Designer (Canva)</td><td>Free since 2024</td><td>Polished pro-grade vector + raster hybrid</td></tr>
+<tr><td>Figma (free tier)</td><td>Free tier</td><td>UI/interface vector work in the browser</td></tr>
+<tr><td>VectorCraft</td><td>Free, open-source</td><td>Watch this space — in development</td></tr>
+</table>
+
+<h2>Explore the rest of the family</h2>
+<p>VectorCraft is one of seven Crafting Apps. The others in active development: <a href="./filmcraft.html">FilmCraft</a> (Premiere alternative with its own codecs), <a href="./lightcraft.html">LightCraft</a> (Lightroom alternative with its own RAW decoder), plus EffectCraft and DesignCraft. For the honest big picture, read the <a href="./artcraft-suite-review.html">full suite review</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>What is VectorCraft?</summary><p>The vector-graphics editor in ArtCraft's Crafting Apps family — a free, open-source reimplementation of Adobe Illustrator written in Rust. Pen tool, booleans, gradient meshes, image tracing, SVG/PDF support. In development as of October 2026.</p></details>
+<details><summary>Is VectorCraft available to download?</summary><p>It's in development. Builds and source appear via getartcraft.com/apps and github.com/storytold. Avoid unofficial mirrors.</p></details>
+<details><summary>How fast is VectorCraft?</summary><p>ArtCraft claims 20,000 shapes rendered in approximately 27 milliseconds at Retina resolution, thanks to native Rust + GPU rendering.</p></details>
+<details><summary>What are the best free Illustrator alternatives right now?</summary><p>Inkscape (open-source), Affinity Designer (free since 2024), and Figma's free tier for UI work — while VectorCraft matures.</p></details>
+<details><summary>Can VectorCraft open Illustrator AI files?</summary><p>Not in the published feature list as of October 2026 — the announced formats are SVG and PDF import/export, plus PNG, JPEG and WebP output. Many AI files carry a PDF-compatible stream, so PDF import may partially work as a bridge, but native AI support is the feature to watch in the release notes.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<div><a href="./about.html">About</a><a href="./contact.html">Contact</a><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms</a></div>
+<div class="disc">ArtCraftGuide is an unofficial, independent fan guide. Not affiliated with ArtCraft, Brandon Thomas, or Adobe Inc. ArtCraft apps are open-source software published on GitHub. "Illustrator" is a trademark of Adobe Inc. Information current as of October 2026.</div>
+</div></footer>
+</body>
+</html>

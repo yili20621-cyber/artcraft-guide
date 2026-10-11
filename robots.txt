@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yili20621-cyber.github.io/artcraft-guide/sitemap.xml

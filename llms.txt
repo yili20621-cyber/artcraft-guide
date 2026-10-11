@@ -1,0 +1,32 @@
+# ArtCraftGuide
+
+> An unofficial, independent fan guide to ArtCraft — the open-source creative software project by Brandon Thomas. Covers both product lines: the ArtCraft studio (controllable AI image/video creation with 62 generation models, BYO API keys, no subscription) and the Crafting Apps (seven free open-source Adobe alternatives written in Rust: PhotoCraft, VectorCraft, FilmCraft, LightCraft, PrintCraft, EffectCraft, DesignCraft).
+
+This site answers: what ArtCraft is, whether it is free (yes — free downloads, no subscription, open source on GitHub at github.com/storytold), how to download and install PhotoCraft safely, how PhotoCraft compares to Photoshop, and the current development status of every app in the suite. All content is dated (October 2026) and updated as apps ship.
+
+## Key facts
+
+- ArtCraft studio: free open-source desktop/browser app for AI image and video creation; compose scenes in 2D/3D then render with 62 models (Nano Banana, GPT Image, FLUX, Seedream, Seedance, Kling, Veo, Sora, Suno, Hunyuan 3D, World Labs Marble). Bring your own API keys; no subscription; Windows/Mac now, Linux/tablets announced.
+- PhotoCraft: free open-source Photoshop alternative, early alpha. Reads/writes layered PSD/PSB (134/135 round-trip tests pass), supports RGB/CMYK/Lab/grayscale at 8/16/32-bit with ICC color management and soft proofing. Roughly 25–35% of Photoshop's feature set; no smart objects yet.
+- VectorCraft: open-source Illustrator alternative, in development. Pen tool, booleans, gradient meshes, image tracing, SVG/PDF import/export.
+- FilmCraft: open-source Premiere Pro alternative, in development. Multi-track timeline, ~55 effects, 30 transitions, EBU R128 loudness, own Rust codecs (H.264/HEVC/ProRes/VP9/AAC/Opus, no FFmpeg).
+- LightCraft: open-source Lightroom alternative, in development. Non-destructive editing, AI masks (sky/subject/background), own Rust RAW decoder (DNG/CR2/ARW/NEF/RAF/RW2/PEF/ORF).
+- Official sources: getartcraft.com and github.com/storytold. Author: Brandon Thomas.
+- This guide is unofficial and not affiliated with ArtCraft, Brandon Thomas, or Adobe Inc.
+
+## Pages
+
+- [What is ArtCraft?](https://yili20621-cyber.github.io/artcraft-guide/): Overview of both product lines, why it went viral, what is ready to use
+- [ArtCraft Studio Review](https://yili20621-cyber.github.io/artcraft-guide/artcraft-studio.html): The controllable AI app — models, pricing (BYO keys), platforms, limitations
+- [PhotoCraft Download Guide](https://yili20621-cyber.github.io/artcraft-guide/photocraft-download.html): Safe official sources, install steps, first-run checks, troubleshooting
+- [PhotoCraft Review](https://yili20621-cyber.github.io/artcraft-guide/photocraft-review.html): Honest alpha review — strengths, limitations, who should use it
+- [PhotoCraft vs Photoshop](https://yili20621-cyber.github.io/artcraft-guide/photocraft-vs-photoshop.html): Feature-by-feature comparison with pricing
+- [Open PSD Without Photoshop](https://yili20621-cyber.github.io/artcraft-guide/photocraft-psd.html): Free options compared, PSD compatibility table, step-by-step
+- [VectorCraft](https://yili20621-cyber.github.io/artcraft-guide/vectorcraft.html): Illustrator alternative — features and status
+- [FilmCraft](https://yili20621-cyber.github.io/artcraft-guide/filmcraft.html): Premiere alternative — features and status
+- [LightCraft](https://yili20621-cyber.github.io/artcraft-guide/lightcraft.html): Lightroom alternative — features and status
+- [ArtCraft Suite Review](https://yili20621-cyber.github.io/artcraft-guide/artcraft-suite-review.html): All 7 Crafting Apps rated, decision guide, Adobe cost savings
+
+## Contact
+
+Corrections and feedback via GitHub: https://github.com/yili20621-cyber

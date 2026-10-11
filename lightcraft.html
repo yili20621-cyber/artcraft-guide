@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LightCraft: Free Open-Source Lightroom Alternative</title>
+<meta name="description" content="LightCraft is ArtCraft's open-source answer to Lightroom — own Rust RAW decoder, AI masks, non-destructive editing. Features, status, and alternatives.">
+<link rel="canonical" href="https://yili20621-cyber.github.io/artcraft-guide/lightcraft.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LightCraft: Free Open-Source Lightroom Alternative">
+<meta property="og:description" content="Own Rust RAW decoder, AI masks, non-destructive editing — LightCraft features, status, and alternatives.">
+<meta property="og:url" content="https://yili20621-cyber.github.io/artcraft-guide/lightcraft.html">
+<meta property="og:image" content="https://yili20621-cyber.github.io/artcraft-guide/images/artcraft-homepage.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="qcSjqYGsympJ9V_Rm7Jsvqtc3agBOfJu8zl4cfnhigA">
+<link rel="stylesheet" href="./style.css">
+<!-- Google Analytics 4 — REPLACE G-XXXXXXXXXX with your Measurement ID after creating a GA4 property -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<!-- Microsoft Clarity — REPLACE CLARITY_PROJECT_ID after creating a free project at clarity.microsoft.com -->
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","CLARITY_PROJECT_ID");</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"LightCraft: Free Open-Source Lightroom Alternative","datePublished":"2026-10-11","dateModified":"2026-10-11","author":{"@type":"Organization","name":"ArtCraftGuide"},"publisher":{"@type":"Organization","name":"ArtCraftGuide"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yili20621-cyber.github.io/artcraft-guide/"},{"@type":"ListItem","position":2,"name":"LightCraft","item":"https://yili20621-cyber.github.io/artcraft-guide/lightcraft.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is LightCraft?","acceptedAnswer":{"@type":"Answer","text":"LightCraft is the photo management and RAW development app in ArtCraft's Crafting Apps family — a free, open-source reimplementation of Adobe Lightroom, written in Rust. It offers non-destructive editing with exposure, color, tone curves, an 8-band color mixer, 3-way color grading, and AI-assisted masks, processing RAW formats like DNG, CR2, ARW, NEF, RAF, RW2, PEF and ORF through its own Rust decoder."}},
+{"@type":"Question","name":"Is LightCraft available to download?","acceptedAnswer":{"@type":"Answer","text":"LightCraft is in development as of October 2026. Builds and source code are published via getartcraft.com/apps and the github.com/storytold organization. Avoid unofficial mirrors."}},
+{"@type":"Question","name":"Which RAW formats does LightCraft support?","acceptedAnswer":{"@type":"Answer","text":"According to the project, LightCraft processes DNG, CR2 (Canon), ARW (Sony), NEF (Nikon), RAF (Fujifilm), RW2 (Panasonic), PEF (Pentax) and ORF (Olympus) files using its own Rust-written decoder rather than third-party libraries."}},
+{"@type":"Question","name":"What are the best free Lightroom alternatives right now?","acceptedAnswer":{"@type":"Answer","text":"darktable (open-source raw editor), RawTherapee (open-source), and digiKam (open-source photo management) are the strongest free options while LightCraft matures."}}
+]}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="./index.html">ArtCraft<span>Guide</span></a>
+<nav class="top">
+<a href="./artcraft-studio.html">Studio</a>
+<a href="./photocraft-download.html">PhotoCraft</a>
+<a href="./photocraft-vs-photoshop.html">vs Photoshop</a>
+<a href="./artcraft-suite-review.html">Full Suite</a>
+</nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="./index.html">Home</a> › LightCraft</p>
+
+<h1>LightCraft: ArtCraft's Open-Source Lightroom Alternative</h1>
+<p class="lede"><span class="tag dev">In development</span><span class="tag free">Free &amp; open-source</span></p>
+<p class="lede">LightCraft is the photo management and RAW development app in ArtCraft's <a href="./index.html">Crafting Apps family</a> — a from-scratch, Rust-written reimplementation of <strong>Adobe Lightroom</strong>. Its tagline: "Your photos. Your pixels. Your machine." Of all seven apps, this one may have the most pent-up demand.</p>
+
+<h2>Status as of October 2026</h2>
+<div class="card">
+<p>LightCraft is <strong>in development</strong>, behind <a href="./photocraft-review.html">PhotoCraft</a> (early alpha) in the family's release order. Builds and source are distributed through <code>getartcraft.com/apps</code> and <code>github.com/storytold</code>. The demand context: Adobe's Photography plan crept from $9.99 to $14.99/month, and the March 2026 $150M settlement over cancellation practices pushed a lot of photographers to look for the exit — a free, local, open-source Lightroom is exactly what they're searching for.</p>
+</div>
+
+<h2>The feature set (as published by the project)</h2>
+<ul>
+<li><strong>Non-destructive editing:</strong> adjustments never alter the original file — the defining Lightroom behavior, implemented from day one.</li>
+<li><strong>Core develop tools:</strong> exposure, color, tone curves, an 8-band color mixer, and 3-way color grading.</li>
+<li><strong>Local adjustments:</strong> brushes and gradients, plus masks targeting <strong>brightness, color range, sky, subject and background</strong> — the AI-assisted masking workflow that modern Lightroom users consider essential.</li>
+<li><strong>Own RAW decoder:</strong> LightCraft processes <strong>DNG, CR2 (Canon), ARW (Sony), NEF (Nikon), RAF (Fujifilm), RW2 (Panasonic), PEF (Pentax) and ORF (Olympus)</strong> through its own Rust-written decoder — not a wrapper around LibRaw or dcraw. Like <a href="./filmcraft.html">FilmCraft's own codecs</a>, it's an ambitious choice that trades short-term speed for long-term control.</li>
+</ul>
+
+<h2>The honest caveat: it's all about the catalog</h2>
+<p>Lightroom's real moat isn't raw processing — darktable and RawTherapee already do that for free. The moat is the <strong>catalog</strong>: years of ratings, keywords, collections and edit histories that photographers can't afford to lose. LightCraft's published materials so far emphasize the develop module; the catalog and migration story is what to watch before planning any switch. And the golden rule applies doubly here: <strong>never point alpha software at your only photo archive.</strong></p>
+
+<h2>LightCraft vs darktable: the comparison that matters</h2>
+<p>Photographers already have a free Lightroom alternative — darktable has been around for years. So why is LightCraft interesting? Three reasons. First, <strong>interface familiarity</strong>: darktable is powerful but famously idiosyncratic, while LightCraft deliberately mirrors Lightroom's layout, so migration costs are near zero. Second, <strong>modern masking</strong>: subject/sky/background masks with one click are what made recent Lightroom versions sticky, and LightCraft implements them from the start; darktable's parametric masks are capable but far more manual. Third, <strong>momentum</strong>: an open-source project moving at this speed attracts contributors, and contributors close feature gaps. The counterweight is maturity — darktable's camera support, noise handling and tethering are years deep. Our honest advice: keep darktable as your working tool, test LightCraft's alpha on a copied folder of a few hundred RAWs when it ships, and judge it on two things only — how your camera's files render, and whether the catalog story is real yet.</p>
+
+<h2>What to use while LightCraft matures</h2>
+<table>
+<tr><th>Tool</th><th>Cost</th><th>Best for</th></tr>
+<tr><td>darktable</td><td>Free, open-source</td><td>Serious raw editing + cataloging</td></tr>
+<tr><td>RawTherapee</td><td>Free, open-source</td><td>Deep raw processing control</td></tr>
+<tr><td>digiKam</td><td>Free, open-source</td><td>Large-library photo management</td></tr>
+<tr><td>LightCraft</td><td>Free, open-source</td><td>Watch this space — in development</td></tr>
+</table>
+
+<h2>Explore the rest of the family</h2>
+<p>LightCraft is one of seven Crafting Apps. Also in development: <a href="./vectorcraft.html">VectorCraft</a> (Illustrator alternative) and <a href="./filmcraft.html">FilmCraft</a> (Premiere alternative). For pixel-level photo editing rather than RAW development, see <a href="./photocraft-review.html">PhotoCraft</a>. For the honest big picture, read the <a href="./artcraft-suite-review.html">full suite review</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>What is LightCraft?</summary><p>The photo management and RAW development app in ArtCraft's Crafting Apps family — a free, open-source reimplementation of Lightroom written in Rust. Non-destructive editing, 8-band color mixer, AI-assisted masks, own RAW decoder. In development as of October 2026.</p></details>
+<details><summary>Is LightCraft available to download?</summary><p>It's in development. Builds and source appear via getartcraft.com/apps and github.com/storytold. Avoid unofficial mirrors.</p></details>
+<details><summary>Which RAW formats does LightCraft support?</summary><p>DNG, CR2 (Canon), ARW (Sony), NEF (Nikon), RAF (Fujifilm), RW2 (Panasonic), PEF (Pentax) and ORF (Olympus), via its own Rust decoder.</p></details>
+<details><summary>What are the best free Lightroom alternatives right now?</summary><p>darktable, RawTherapee and digiKam — all free and open-source — while LightCraft matures.</p></details>
+<details><summary>Can LightCraft import my existing Lightroom catalog?</summary><p>No catalog-import feature has been announced as of October 2026 — and this is the single most important thing to watch. Years of ratings, keywords and edit histories live in that catalog. Until a tested migration path ships, keep Lightroom (or darktable) as the system of record and only experiment with copies of your files.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<div><a href="./about.html">About</a><a href="./contact.html">Contact</a><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms</a></div>
+<div class="disc">ArtCraftGuide is an unofficial, independent fan guide. Not affiliated with ArtCraft, Brandon Thomas, or Adobe Inc. ArtCraft apps are open-source software published on GitHub. "Lightroom" is a trademark of Adobe Inc. Camera brand names belong to their respective owners. Information current as of October 2026.</div>
+</div></footer>
+</body>
+</html>
